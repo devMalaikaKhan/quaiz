@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizard - Modern Quiz App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- START SCREEN -->
+  <div class="start-screen" id="startScreen">
+    <h1>🧠 Quizard</h1>
+    <p>Test your knowledge with style</p>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div class="quiz-screen" id="quizScreen">
+    <div class="top-bar">
+      <div id="progressText">Question 1/5</div>
+      <div id="score">Score: 0</div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <h2 id="question">Question here</h2>
+
+    <div id="answers" class="answers"></div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div class="result-screen" id="resultScreen">
+    <h2>🎉 Finished!</h2>
+    <p id="finalScore"></p>
+    <button onclick="restartQuiz()">Play Again</button>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
+
